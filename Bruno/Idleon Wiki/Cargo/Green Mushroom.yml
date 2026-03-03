@@ -1,0 +1,31 @@
+info:
+  name: Green Mushroom
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://idleon.wiki/api.php?action={{action}}&tables=Enemies&fields={{all-fields}}&format={{format}}&where=_pageName='Green Mushroom'
+  params:
+    - name: action
+      value: "{{action}}"
+      type: query
+    - name: tables
+      value: Enemies
+      type: query
+    - name: fields
+      value: "{{all-fields}}"
+      type: query
+    - name: format
+      value: "{{format}}"
+      type: query
+    - name: where
+      value: _pageName='Green Mushroom'
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

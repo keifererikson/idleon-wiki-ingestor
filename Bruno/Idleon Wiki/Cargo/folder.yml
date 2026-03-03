@@ -1,0 +1,14 @@
+info:
+  name: Cargo
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
+  variables:
+    - name: action
+      value: cargoquery
+    - name: format
+      value: json
+    - name: all-fields
+      value: _pageName=MonsterName,Image,Attack,Accuracy5,Accuracy100,Health,Defence,Speed,World,Areas,SpecialAreas,EXP,RespawnTime,Defence0
