@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace IdleOn_Wiki.Models
 {
-    public class WikiResponse
+    public class WikiParseResponse
     {
         [JsonPropertyName("parse")]
         public ParseData Parse { get; set; }

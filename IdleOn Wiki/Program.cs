@@ -17,7 +17,7 @@ namespace IdleOn_Wiki
             string jsonResponse = await response.Content.ReadAsStringAsync();
 
             var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-            WikiResponse myData = JsonSerializer.Deserialize<WikiResponse>(jsonResponse, options);
+            WikiParseResponse myData = JsonSerializer.Deserialize<WikiParseResponse>(jsonResponse, options);
 
             Console.WriteLine(myData);
             Console.WriteLine(myData.Parse);
